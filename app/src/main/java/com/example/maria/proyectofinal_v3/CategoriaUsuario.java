@@ -33,7 +33,6 @@ public class CategoriaUsuario extends AppCompatActivity {
 
     private GestionComs gComs;
     private GestionHistorial gHist;
-    //private ArrayList<DatosServicio> servicios;
 
     private LocationManager lm;
     private Location loc;
