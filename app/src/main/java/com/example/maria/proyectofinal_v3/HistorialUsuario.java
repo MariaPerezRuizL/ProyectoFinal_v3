@@ -3,12 +3,15 @@ package com.example.maria.proyectofinal_v3;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
 import modelo.GestionHistorial;
+
+import static com.example.maria.proyectofinal_v3.R.styleable.View;
 
 public class HistorialUsuario extends AppCompatActivity {
 
@@ -39,7 +42,7 @@ public class HistorialUsuario extends AppCompatActivity {
 
         boolean res=false;
 
-        /*
+
         //HAY QUE COMPROBAR QUE NO ESTÁ VACIA PARA CAMBIAR RES=TRUE
         //Accedemos a la bbdd del terminal
 
@@ -61,13 +64,32 @@ public class HistorialUsuario extends AppCompatActivity {
         lvHist.setAdapter(sc);
 
         adp.cerrar();
-        */
+
 
         return res;
 
 
     }
+    /*
 
+    lvHist.setOnItemClickListener(
+            new AdapterView.OnItemClickListener(){
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+            //Al hacer click en algún elemento de la lista, se tiene que hacer visible la
+            //barra de valoración
+
+            //hago referencia a la barra
+            ratingBar=(RatingBar) findViewById(R.id.rbPuntuacion);
+
+
+
+        }
+    }
+
+*/
 
 
 }
