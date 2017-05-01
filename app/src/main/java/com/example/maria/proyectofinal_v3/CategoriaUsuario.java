@@ -185,7 +185,6 @@ public class CategoriaUsuario extends AppCompatActivity {
                 CategoriaUsuario.this.startActivity(intent);
 
             }
-
           // servicios=datosServicios;
 
         }
