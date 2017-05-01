@@ -27,11 +27,14 @@ public class CategoriaUsuario extends AppCompatActivity {
     private TextView fecha;
     private EditText edtDni, edtDireccion;
     private CheckBox cbDireccion;
+
     private DatosServicio datServ;
     private DatosUsuario datUser;
+
     private GestionComs gComs;
     private GestionHistorial gHist;
     //private ArrayList<DatosServicio> servicios;
+
     private LocationManager lm;
     private Location loc;
 
